@@ -1,6 +1,6 @@
 # StarterPack for web app based on React JS & SCSS
 
-This project was created by Alexnder Skorokhodov
+This project was created by Alexander Skorokhodov
 
 Just Type
 
