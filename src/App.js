@@ -2,20 +2,17 @@
 import "./styles/App.scss";
 // import "./styles/themes.scss";
 
-import React, { useEffect, useState, useRef,  useMemo } from "react";
+import React from "react";
 // import useColorScheme from "./scripts/useColorScheme";
 
 // components
 // import Footer from "./components/Footer";
 
 // pages
-import Land from "./Pages/Land";
-// import Error from "./pages/Error"
-// import Product from "./pages/Product";
+import Main from "./Pages/Main";
 
 // router
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Products from "./Pages/Products";
 
 
 function App() {
@@ -28,8 +25,7 @@ function App() {
     <div className={`App`}>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Land/>} />
-            <Route path='/products' element={<Products />}/>
+            <Route path="/" element={<Main/>} />
           </Routes>
         </BrowserRouter>
     </div>
