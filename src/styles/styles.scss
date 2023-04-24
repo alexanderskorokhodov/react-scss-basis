@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  transition: 0.3s ease all;
+}
+
+body {
+  width: 100%;
+  background: var(--theme-page-background);
+  font-family: $Outfit;
+}
+
+#root {
+  height: 100%;
+}

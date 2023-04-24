@@ -1,0 +1,152 @@
+@import "./variables.scss";
+
+.App{
+    .button{
+        margin: 0em 0em 0em 1em;
+        padding: 0.5em 1em;
+        height: min-content;
+        font-weight: 400;
+        font-size: 20px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    .faceArrow{
+        cursor: pointer;
+    }
+    .fill{
+        background: darkblue;
+        color: white;
+        border: 3px darkblue solid;
+    }
+    .fill:active{
+        background: white;
+        border: 3px lightgray solid;
+        color: lightgray;
+        cursor: pointer;
+    }
+    .unfill{
+        background: white;
+        border: 3px black solid;
+    }
+    .unfill:active{
+        background: black;
+        color: lightgray;
+        cursor: pointer;
+    }
+    height: 200vh;
+    font-family: $Outfit;
+    .faceTitle{
+        user-select: none;
+        font-weight: 700;
+        font-size: 70px;
+        margin: 0;
+    }
+    .faceView{
+        background: linear-gradient(black, lightgray);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100vh;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        align-items: center;
+        .titleView{
+            color: white;
+            padding-top: 40vh;
+            align-items: center;
+            display: flex;
+            flex-direction: row;
+            .faceDesc{
+                margin-left: 0.5em;
+                padding-top: 40px;
+                font-weight: 200;
+                font-size: 13px;
+            }
+        }
+    }
+    .faceItems{
+        background: linear-gradient(lightgray, white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 100vh;
+        width: 100%;
+        .faceTitle{
+
+        }
+        .faceItem{
+
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            .faceImg{
+                height: 40vh;
+                
+            }
+            .arrow{
+                color: lightgray;
+                border-radius: 15px;
+                width: 50px;
+                height: 40vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .arrow:hover{
+                background-color: lightgray;
+                color: black;
+            }
+        }
+    }
+    .faceButtons{
+        position: relative;
+
+        width: 100%;
+        height: 30vh;
+        justify-content: space-evenly;
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .aboutUs{
+        background: black;
+        color: white;
+        min-height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .faceTitle{
+            width: 100%;
+            text-align: start;
+            padding: 1em;
+        }
+        .up{
+            width: 100%;
+            height: min-content;
+            font-size: 70px;
+            text-align: center;
+            border-top: 2px lightgray solid;
+        }
+        .descView{
+            width: 100%;
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+            height: 60vh;
+            justify-content: space-evenly;
+            .desc{
+                margin-left: 1em;
+                margin-right: 1em;
+                max-width: 1000px;
+             }
+            .desc:hover{
+                font-size: x-large;
+            }
+    }
+    }
+}

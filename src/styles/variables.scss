@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+// fonts
+$Outfit: 'Outfit', sans-serif;
+
+// spasing
+$spasing-md: 16px;
+$spasing-lg: 32px;
+
+//border radius
+$borderRadius: 11px;
+
+//header height
+$headerHeight: 100px;
+
+@mixin breakpoint($points) {
+    @if $points == md {
+        // 768 px
+        @media (min-width: 48em) {
+            @content;
+        }
+    }
+}

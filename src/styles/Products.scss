@@ -1,0 +1,71 @@
+.App{
+    width: 100%;
+    .productsTitle{
+        font-weight: 700;
+        font-size: 70px;
+        margin: 1em;
+        cursor: pointer;
+        color: black;
+    }
+    .title{
+        font-size: 40px;
+    }
+    .productsView{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 1.5em;
+            .product{
+                cursor: pointer;
+                border-radius: 4px;
+                margin: 0.5em;
+                .imgHolder{
+                    border-radius: 1px;
+                    padding: 1em;
+                    min-height: 300px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: lightgrey;
+                }
+                .productImg{
+                    width: 150px;
+                    border-radius: 4px;
+                }
+                .productDesc{
+                    margin: 0.5em;
+                    .productTitle{
+                        font-size: small;
+                    }
+                    .productPrice{
+                        font-weight: 600;
+                    }
+                    .productOper{
+                        margin-top: 0.5em;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        select{
+                            border-radius: 4px;
+                        }
+                        .button{
+                            text-align: center;
+                            font-size: medium;
+                            margin: 0;
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+            .product:hover{
+                border: black 3px solid;
+            }
+        }
+    }
+}
