@@ -1,19 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
 // fonts
-$Outfit: 'Outfit', sans-serif;
-
+$Outfit: 'Outfit',
+sans-serif;
 // spasing
 $spasing-md: 16px;
 $spasing-lg: 32px;
-
 //border radius
 $borderRadius: 11px;
-
 //header height
 $headerHeight: 100px;
-
+//colors
+$bg: #041018;
+$text-1: #E6E0E9;
+$text-2: rgba(255,
+255,
+255,
+0.7);
+$text-3: #E1C358;
+$text-4: #5897E1;
+$text-5: #E6E0E9;
+$text-neg: #E15858;
+$bg-b: #1C2E39;
 @mixin breakpoint($points) {
-    @if $points == md {
+    @if $points==md {
         // 768 px
         @media (min-width: 48em) {
             @content;
